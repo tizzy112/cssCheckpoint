@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+}
+.navbar{
+    padding: 0 45px;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+navbar_logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo_dot{
+    color: red;
+}
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.navLinks a:hover{
+    color: red;
+    transform: rotate(6deg);
+}
+.navLinks_list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap:10px;
+}
+.hero{
+    background-color: skyblue;
+    padding: 45px;
+}
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+.hero_content_icon{
+    display: flex;
+    gap: 10px;
+    
+}
+.hero_content_icon > div{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ion-icons{
+    color: white;
+}
+
+/* info section  */
+
+.info {
+    background-color: #e8eaf6;
+    padding: 45px;
+  }
+  
+  .info_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .info_items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
